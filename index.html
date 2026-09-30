@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body style = "background-color: #ebf0ac; text-align: center;">
+        <h1 >
+            دخلي الباسورد
+        </h1>
+        <input type="password" id="password" placeholder="دخلي الباسورد هنا">
+        <button onclick="checkpassword()">Submit</button>
+        <p  id="message"></p>
+     <script>
+        function checkpassword() {
+
+            let password = document.getElementById("password").value;
+            if (password === "manooosha") {
+                window.location.href = "page2.html";
+            } else {
+                document.getElementById ("error-message").innerHTML = "Incorrect password. Please try again.";
+            }
+        }
+    </script>
+    </body>
+</html>
